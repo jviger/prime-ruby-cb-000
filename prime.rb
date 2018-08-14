@@ -1,7 +1,6 @@
 # Add  code here!
 def prime?(integer)
-  if integer % 2 == 0 
-    return false
-  else return true
-end
+ 
+ (1..integer - 1).any? { |x| integer % x == 0}
+ 
 end
